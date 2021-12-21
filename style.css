@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    /* font-family: "Comic Sans MS"; */
+    background-color: #869397;
+    color: white;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .container {
+    background-color: #041E42;
+    min-width: 70%;
+
+  }
+
+  .jumbotron {
+    background-color: #041E42;
+    padding-top: 20px;
+    margin-top: 50px;
+    min-height: 100%;
+    height: 100%
+  }
+
+  nav {
+    background-color: #041E42;
+}
+
+a {
+    color: #869397;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+Link:visited {
+    text-decoration: none;
+}
+
+Link:link {
+    text-decoration: none;
+}
+
+Link:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+Link:active {
+    text-decoration: none;
+}
+
+h2, h3 {
+    margin-right: 10px;
+
+}
+
+
+.heading {
+    color: #869397;
+    background-color: #041E42;
+}
+
+.heading:hover {
+    font-weight: 500;
+    text-decoration: none;
+}
