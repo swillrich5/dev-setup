@@ -80,10 +80,11 @@ pre code {
     background-color: #eee;
     border: 1px solid #999;
     display: block;
-    padding: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     color: #0f0707;
     max-width: 500px;
-    margin-left: 150px;
   }
 
 .btn {

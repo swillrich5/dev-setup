@@ -14,7 +14,7 @@
             <h1 class="text-center">Scott's Development Setup</h1>
             <h2 class="text-center pb-5">React Setup</h2>
 
-            <div class="accordion" id="accordionExample">
+            <div class="accordion" id="accordianReactSetup">
                 <div class="card">
                   <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
@@ -23,11 +23,10 @@
                       </button>
                     </h2>
                   </div>
-              
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordianReactSetup">
                     <div class="card-body">
                         <ol>
-                            <li>If you don’t already have Chrome installed, visit the download page <a href="https://www.google.com/chrome/">here</a>.</li>
+                            <li>If Chrome isn't already installed, visit the download page <a href="https://www.google.com/chrome/">here</a>.</li>
                             <li>Download, open, and run the installation file.</li>
                         </ol>
                     </div>
@@ -41,7 +40,7 @@
                       </button>
                     </h2>
                   </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordianReactSetup">
                     <div class="card-body">
                          <ol>
                             <li>Go to the <a href="https://code.visualstudio.com/docs/setup/setup-overview">setup page</a> on the VS Code website and select Mac as your platform.</li>
@@ -62,7 +61,7 @@
                       </button>
                     </h2>
                   </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordianReactSetup">
                     <div class="card-body">
                       <p>On the Mac, Terminal is installed by default, but I like to use <a href="https://iterm2.com/">iTerm2</a>.  
                       It has a lot of cool features including being able to adjust the transparency of the window background.</p>
@@ -70,8 +69,53 @@
                     </div>
                   </div>
                 </div>
-              </div>
-
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Xcode
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordianReactSetup">
+                        <div class="card-body">
+                            <ol>
+                                <li>
+                                    <p>Copy the following line, paste it into your Terminal window, and press Enter:</p>
+                                    <pre><code>xcode-select --install</code></pre>
+                                </li>
+                                <li>
+                                    <p>A window will appear with the following message: “The xcode-select command requires the command line developer tools. 
+                                    Would you like to install the tools now?”. Select “Install.”</p>
+                                </li>
+                                <li>
+                                    <p>Agree to the Terms of Service</p>
+                                </li>
+                            </ol>
+                            <div class="pl-4">
+                                <p></p>
+                                <p>Note: If you get a message saying that you don't have permissions to run this, copy and paste the following code into your terminal and press Enter.</p>
+                                <pre><code>sudo xcode-select --install</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                Collapsible Group Item #3
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordianReactSetup">
+                        <div class="card-body">
+                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
