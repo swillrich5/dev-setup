@@ -65,3 +65,33 @@ h2, h3 {
     font-weight: 500;
     text-decoration: none;
 }
+
+.navbar-dark {
+    color: #869397;
+    background-color: #041E42;
+}
+
+.bg-dark {
+    color: #869397;
+    background-color: #041E42;    
+}
+
+pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    color: #0f0707;
+    max-width: 500px;
+    margin-left: 150px;
+  }
+
+.btn {
+    color: #869397;
+    background-color: #041E42;    
+}
+
+.accordion {
+    color: #041E42;  
+    background-color: #869397;
+}
