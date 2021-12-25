@@ -9,209 +9,242 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body class="">
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="text-center">Scott's Development Setup</h1>
-            <h2 class="text-center pb-5">React Setup</h2>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Scott's Development Setup</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="react.html">React</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="django.html">Django</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="php.html">PHP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="github.html">Github</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mysql.html">MySQL</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="mongodb.html">MongoDB</a>
+            </li>
+            </ul>
+        </div>
+        </nav>    
+        <div class="container">
+            <div class="jumbotron">
+                <h1 class="text-center">Scott's Development Setup</h1>
+                <h2 class="text-center pb-5">React Setup</h2>
 
-            <div class="accordion" id="accordianReactSetup">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Install Google Chrome
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordianReactSetup">
-                    <div class="card-body">
-                        <ol>
-                            <li>If Chrome isn't already installed, visit the download page <a href="https://www.google.com/chrome/">here</a>.</li>
-                            <li>Download, open, and run the installation file.</li>
-                        </ol>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Install VS Code 
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordianReactSetup">
-                    <div class="card-body">
-                         <ol>
-                            <li>Go to the <a href="https://code.visualstudio.com/docs/setup/setup-overview">setup page</a> on the VS Code website and select Mac as your platform.</li>
-                            <li>Open your Downloads folder and click on the file to unzip.</li>
-                            <li>Drag the file to your Applications folder.</li>  
-                          </ol>
-                          <img src="./assets/images/VSCode-drag-icon.png" alt="">
-                          <p>You should now be able to access VS Code from your Applications folder.</p>
-                          <img src="./assets/images/VSCode_in_App_Folder.png" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        Terminal (Command Line)
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordianReactSetup">
-                    <div class="card-body">
-                      <p>On the Mac, Terminal is installed by default, but I like to use <a href="https://iterm2.com/">iTerm2</a>.  
-                      It has a lot of cool features including being able to adjust the transparency of the window background.</p>
-                      <img src="./assets/images/iTerm2.png" class="pl-5" alt="">
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingFour">
-                      <h2 class="mb-0">
-                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                          Xcode
+                <div class="accordion" id="accordianReactSetup">
+                    <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Install Google Chrome
                         </button>
-                      </h2>
+                        </h2>
                     </div>
-                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordianReactSetup">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordianReactSetup">
                         <div class="card-body">
                             <ol>
-                                <li>
-                                    <p>Copy the following line, paste it into your Terminal window, and press Enter:</p>
-                                    <pre><code>xcode-select --install</code></pre>
-                                </li>
-                                <li>
-                                    <p>A window will appear with the following message: “The xcode-select command requires the command line developer tools. 
-                                    Would you like to install the tools now?”. Select “Install.”</p>
-                                </li>
-                                <li>
-                                    <p>Agree to the Terms of Service</p>
-                                </li>
+                                <li>If Chrome isn't already installed, visit the download page <a href="https://www.google.com/chrome/">here</a>.</li>
+                                <li>Download, open, and run the installation file.</li>
                             </ol>
-                            <div class="pl-4">
-                                <p></p>
-                                <p>Note: If you get a message saying that you don't have permissions to run this, copy and paste the following code into your terminal and press Enter.</p>
-                                <pre><code>sudo xcode-select --install</code></pre>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Install VS Code 
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordianReactSetup">
+                        <div class="card-body">
+                            <ol>
+                                <li>Go to the <a href="https://code.visualstudio.com/docs/setup/setup-overview">setup page</a> on the VS Code website and select Mac as your platform.</li>
+                                <li>Open your Downloads folder and click on the file to unzip.</li>
+                                <li>Drag the file to your Applications folder.</li>  
+                            </ol>
+                            <img src="./assets/images/VSCode-drag-icon.png" alt="">
+                            <p>You should now be able to access VS Code from your Applications folder.</p>
+                            <img src="./assets/images/VSCode_in_App_Folder.png" alt="">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Terminal (Command Line)
+                        </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordianReactSetup">
+                        <div class="card-body">
+                        <p>On the Mac, Terminal is installed by default, but I like to use <a href="https://iterm2.com/">iTerm2</a>.  
+                        It has a lot of cool features including being able to adjust the transparency of the window background.</p>
+                        <img src="./assets/images/iTerm2.png" class="pl-5" alt="">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Xcode
+                            </button>
+                        </h2>
+                        </div>
+                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordianReactSetup">
+                            <div class="card-body">
+                                <ol>
+                                    <li>
+                                        <p>Copy the following line, paste it into your Terminal window, and press Enter:</p>
+                                        <pre><code>xcode-select --install</code></pre>
+                                    </li>
+                                    <li>
+                                        <p>A window will appear with the following message: “The xcode-select command requires the command line developer tools. 
+                                        Would you like to install the tools now?”. Select “Install.”</p>
+                                    </li>
+                                    <li>
+                                        <p>Agree to the Terms of Service</p>
+                                    </li>
+                                </ol>
+                                <div class="pl-4">
+                                    <p></p>
+                                    <p>Note: If you get a message saying that you don't have permissions to run this, copy and paste the following code into your terminal and press Enter.</p>
+                                    <pre><code>sudo xcode-select --install</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Homebrew
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordianReactSetup">
+                            <div class="card-body">
+                                <ol>
+                                    <li>
+                                        Go to <a href="https://brew.sh/">Homebrew</a>. Copy the script listed under Install Homebrew.
+                                    </li>
+                                    <img class="py-4"src="./assets/images/Homebrew.png" alt="">
+                                    <li>
+                                        Paste the script into your Terminal window. Press Enter.
+                                    </li>
+                                    <img src="./assets/images/Homebrew-install.png" alt="">
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSix">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    SSH Keys
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordianReactSetup">
+                            <div class="card-body">
+                                And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingSeven">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Node.js
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordianReactSetup">
+                            <div class="card-body">
+                                And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingEight">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Express
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordianReactSetup">
+                            <div class="card-body">
+                                And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingNine">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    Databases (Optional)
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordianReactSetup">
+                            <div class="card-body">
+                                <a href="./mysql.html">MySQL</a><br>
+                                <a href="./mongodb.html">MongoDB</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingTen">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    NoSQL - MongoDB
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordianReactSetup">
+                            <div class="card-body">
+                                And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header" id="headingEleven">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                    React
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordianReactSetup">
+                            <div class="card-body">
+                                And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="card">
-                    <div class="card-header" id="headingFive">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                Homebrew
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordianReactSetup">
-                        <div class="card-body">
-                            <ol>
-                                <li>
-                                    Go to <a href="https://brew.sh/">Homebrew</a>. Copy the script listed under Install Homebrew.
-                                </li>
-                                <img class="py-4"src="./assets/images/Homebrew.png" alt="">
-                                <li>
-                                    Paste the script into your Terminal window. Press Enter.
-                                </li>
-                                <img src="./assets/images/Homebrew-install.png" alt="">
-                            </ol>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingSix">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                SSH Keys
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordianReactSetup">
-                        <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingSeven">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                Node.js
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordianReactSetup">
-                        <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingEight">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                                Express
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#accordianReactSetup">
-                        <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingNine">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-                                MySQL
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordianReactSetup">
-                        <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTen">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                NoSQL - MongoDB
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordianReactSetup">
-                        <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingEleven">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                                React
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#accordianReactSetup">
-                        <div class="card-body">
-                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
-                        </div>
-                    </div>
-                </div>
             </div>
-          </div>
+            </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 </body>
 </html>

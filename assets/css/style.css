@@ -81,10 +81,14 @@ pre code {
     border: 1px solid #999;
     display: block;
     padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
     color: #0f0707;
     max-width: 500px;
+    overflow: auto;
+    word-wrap: normal;
+    white-space: pre;
   }
 
 .btn {
